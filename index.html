@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partyjka: prywatność i regulamin</title>
+<style>
+  :root { --bg: #fff; --fg: #1d1d1f; --muted: #6b6b70; --accent: #34192B; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1a0d16; --fg: #f2eef1; --muted: #a99ea6; --accent: #e7b8d6; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1.5rem; margin: 48px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.1rem; margin: 24px 0 4px; }
+  p, li { margin: 0 0 8px; }
+  nav a, a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Partyjka</h1>
+  <p class="muted">Gry imprezowe na telefon.</p>
+  <nav><a href="#prywatnosc">Polityka prywatności</a> · <a href="#regulamin">Regulamin</a> · <a href="#kontakt">Kontakt</a></nav>
+
+  <!-- ponytail: same text as src/app/privacy.tsx; change both together -->
+  <h2 id="prywatnosc">Polityka prywatności</h2>
+  <p>Partyjka nie ma kont, reklam ani analityki. Nie zbieramy twoich danych: wszystko, co wpiszesz, zostaje na tym telefonie.</p>
+
+  <h3>Co zostaje na telefonie</h3>
+  <p>Twoje imię i kolor awatara, potwierdzenie wieku, odznaki, ostatnia gra, zapisane partie i ustawienia gier, a także imiona i kolory osób, z którymi grasz przez Bluetooth. Są tylko w pamięci aplikacji i nie trafiają do nas. Imię i kolor zmienisz w Profilu, a usunięcie aplikacji usuwa wszystkie te dane.</p>
+
+  <h3>Wiek</h3>
+  <p>Gry dla dorosłych pokazujemy tylko wtedy, gdy twoje konto Apple albo Google potwierdzi, że masz 18 lat. Telefon najpierw pyta cię, czy udostępnić wiek. Aplikacja dostaje tylko odpowiedź „18 lat albo więcej” lub „mniej”, bez daty urodzenia, i zapisuje ją na telefonie. Nie trafia ona do nas.</p>
+
+  <h3>Gra przez Bluetooth</h3>
+  <p>W trybie „Obok ciebie” telefon łączy się bezpośrednio z telefonami w pobliżu, bez internetu. Wysyła im twoje imię, kolor awatara i ruchy w grze, a one zapamiętują twoje imię i kolor, żeby móc zaprosić cię do kolejnej gry. Gdy otwierasz pokój, każdy telefon z Partyjką w pobliżu widzi twoje imię, kolor awatara, grę i wolne miejsca, zanim ktokolwiek dołączy. Zaproszenie zawiera tylko skrót z imion, nie same imiona.</p>
+  <p>Zgodę na Bluetooth cofniesz w Ustawieniach telefonu; gry z komputerem i na jednym telefonie działają bez niej. Na Androidzie starszym niż 12 system nazywa ją zgodą na lokalizację, ale Partyjka z lokalizacji nie korzysta.</p>
+
+  <h3>Aktualizacje</h3>
+  <p>Po uruchomieniu aplikacja pyta serwery Expo (650 Industries, Inc.), czy jest nowa wersja, i ją pobiera. Zapytanie zawiera system telefonu, wersję aplikacji i losowy znacznik instalacji, bez imienia i bez identyfikatorów urządzenia. Jak każde połączenie z internetem pokazuje też adres IP. Expo przetwarza te dane w naszym imieniu, tylko żeby dostarczyć aktualizację.</p>
+
+  <h3>Twoje prawa</h3>
+  <p>Nie przechowujemy twoich danych, więc po naszej stronie nie ma czego udostępnić ani usunąć. Możesz napisać do nas z każdym pytaniem o prywatność i złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych.</p>
+
+  <h2 id="regulamin">Regulamin</h2>
+  <h3>1. Czym jest Partyjka</h3>
+  <p>Partyjka to darmowa aplikacja z grami towarzyskimi na jeden telefon, przeciw komputerowi i przez Bluetooth z telefonami obok. Nie wymaga konta i nie ma płatności w aplikacji.</p>
+
+  <h3>2. Zasady korzystania</h3>
+  <ul>
+    <li>Korzystasz z aplikacji do prywatnej rozrywki.</li>
+    <li>Nie wpisuj jako imienia treści obraźliwych ani cudzych danych: inni gracze obok je zobaczą.</li>
+    <li>Nie próbuj zakłócać gier innych osób ani modyfikować aplikacji, żeby to robić.</li>
+  </ul>
+
+  <h3>3. Gry dla dorosłych</h3>
+  <p>Niektóre gry (np. Poker) są tylko dla osób pełnoletnich i pokazujemy je dopiero po potwierdzeniu wieku przez konto Apple albo Google. Poker toczy się na wirtualne żetony bez wartości: nie można ich kupić, wygrać ani wymienić na pieniądze ani nagrody.</p>
+
+  <h3>4. Odpowiedzialność</h3>
+  <p>Aplikację udostępniamy bezpłatnie, w obecnej postaci. Staramy się, żeby działała dobrze, ale nie gwarantujemy, że będzie zawsze dostępna i bez błędów, ani że gra przez Bluetooth zadziała na każdym telefonie. Nie ograniczamy odpowiedzialności tam, gdzie prawo na to nie pozwala, i nie naruszamy praw, które przysługują ci jako konsumentowi.</p>
+
+  <h3>5. Prawa do aplikacji</h3>
+  <p>Aplikacja, jej wygląd, teksty i grafiki należą do wydawcy. Zasady klasycznych gier nie są niczyją własnością; nazwy gier w Partyjce są nasze.</p>
+
+  <h3>6. Sklepy z aplikacjami</h3>
+  <p>Pobranie aplikacji z App Store albo Google Play podlega też warunkom tego sklepu. Dla App Store obowiązuje standardowa umowa licencyjna Apple (EULA).</p>
+
+  <h3>7. Zmiany i prawo</h3>
+  <p>Gdy zmienimy regulamin albo politykę prywatności, zmienimy tę stronę i datę poniżej. Regulamin podlega prawu polskiemu.</p>
+
+  <h2 id="kontakt">Kontakt</h2>
+  <!-- UZUPEŁNIJ: te same wartości co PUBLISHER i CONTACT_EMAIL w src/app/privacy.tsx -->
+  <p>Wydawca: UZUPEŁNIJ: wydawca</p>
+  <p>Pytania, błędy i pomysły: <a href="mailto:UZUPELNIJ@example.com">UZUPELNIJ@example.com</a></p>
+  <p class="muted">Obowiązuje od 13 listopada 2026.</p>
+</main>
+</body>
+</html>
