@@ -14,7 +14,9 @@
   h3 { font-size: 1.1rem; margin: 24px 0 4px; }
   p, li { margin: 0 0 8px; }
   nav a, a { color: var(--accent); }
+  nav { margin-bottom: 4px; }
   .muted { color: var(--muted); font-size: .9rem; }
+  .lang { margin-top: 64px; border-top: 1px solid var(--muted); padding-top: 32px; }
 </style>
 </head>
 <body>
@@ -22,19 +24,24 @@
   <h1>Partyjka</h1>
   <p class="muted">Gry imprezowe na telefon.</p>
   <nav><a href="#prywatnosc">Polityka prywatności</a> · <a href="#regulamin">Regulamin</a> · <a href="#kontakt">Kontakt</a></nav>
+  <nav><a href="#en" lang="en">English version</a></nav>
 
-  <!-- ponytail: same text as src/app/privacy.tsx; change both together -->
+  <!-- ponytail: the policy follows src/app/privacy.tsx in the hackathon repo (Polish and English); change both together.
+       The paragraph about text typed in games is not in the app yet. -->
   <h2 id="prywatnosc">Polityka prywatności</h2>
-  <p>Partyjka nie ma kont, reklam ani analityki. Nie zbieramy twoich danych: wszystko, co wpiszesz, zostaje na tym telefonie.</p>
+  <p>Partyjka nie ma kont, reklam ani analityki. Nie zbieramy twoich danych: wszystko, co wpiszesz, zostaje na tym telefonie albo trafia tylko do telefonów, z którymi grasz.</p>
 
   <h3>Co zostaje na telefonie</h3>
-  <p>Twoje imię i kolor awatara, potwierdzenie wieku, odznaki, ostatnia gra, zapisane partie i ustawienia gier, a także imiona i kolory osób, z którymi grasz przez Bluetooth. Są tylko w pamięci aplikacji i nie trafiają do nas. Imię i kolor zmienisz w Profilu, a usunięcie aplikacji usuwa wszystkie te dane.</p>
+  <p>Twoje imię i kolor awatara, język, data urodzenia, odznaki, ostatnia gra, zapisane partie i ustawienia gier, a także imiona i kolory osób, z którymi grasz przez Bluetooth. Są tylko w pamięci aplikacji i nie trafiają do nas. Imię, kolor i język zmienisz w Profilu, a usunięcie aplikacji usuwa wszystkie te dane.</p>
+  <p>Gdy grasz w Mafię z innymi telefonami, telefon pamięta też przez najwyżej godzinę kod pokoju, przez Wi-Fi także adres telefonu hosta, i losowy numer, po którym telefon hosta rozpoznaje cię przy powrocie.</p>
 
   <h3>Wiek</h3>
-  <p>Gry dla dorosłych pokazujemy tylko wtedy, gdy twoje konto Apple albo Google potwierdzi, że masz 18 lat. Telefon najpierw pyta cię, czy udostępnić wiek. Aplikacja dostaje tylko odpowiedź „18 lat albo więcej” lub „mniej”, bez daty urodzenia, i zapisuje ją na telefonie. Nie trafia ona do nas.</p>
+  <p>Przy pierwszym otwarciu aplikacja pyta o datę urodzenia. Gry dla dorosłych pokazuje tylko wtedy, gdy wynika z niej, że masz ukończone 18 lat. Data zostaje na tym telefonie i nie trafia do nas. Nie da się jej zmienić w aplikacji. Jeśli wpiszesz złą datę: na Androidzie wyczyść dane Partyjki w ustawieniach telefonu, a na iPhonie usuń aplikację i zainstaluj ją ponownie. Wtedy zapyta o datę jeszcze raz.</p>
 
-  <h3>Gra przez Bluetooth</h3>
+  <h3>Gra przez Bluetooth i Wi-Fi</h3>
   <p>W trybie „Obok ciebie” telefon łączy się bezpośrednio z telefonami w pobliżu, bez internetu. Wysyła im twoje imię, kolor awatara i ruchy w grze, a one zapamiętują twoje imię i kolor, żeby móc zaprosić cię do kolejnej gry. Gdy otwierasz pokój, każdy telefon z Partyjką w pobliżu widzi twoje imię, kolor awatara, grę i wolne miejsca, zanim ktokolwiek dołączy. Zaproszenie zawiera tylko skrót z imion, nie same imiona.</p>
+  <p>W niektórych grach telefon wysyła też to, co wpiszesz: skojarzenia i wiadomości na czacie w Impostorze oraz odpowiedzi w Państwach-Miastach. Widzą je tylko telefony w tym samym pokoju i tylko w trakcie rundy. Nie są nigdzie zapisywane i nie trafiają do nas.</p>
+  <p>Przez Wi-Fi telefony łączą się bezpośrednio w sieci lokalnej, bez internetu i bez naszego serwera: nic z gry nie trafia do nas. Pokój Wi-Fi nie jest ogłaszany, dołącza się do niego kodem. iPhone za pierwszym razem pyta o dostęp do sieci lokalnej; cofniesz go w Ustawieniach, w Partyjce.</p>
   <p>Zgodę na Bluetooth cofniesz w Ustawieniach telefonu; gry z komputerem i na jednym telefonie działają bez niej. Na Androidzie starszym niż 12 system nazywa ją zgodą na lokalizację, ale Partyjka z lokalizacji nie korzysta.</p>
 
   <h3>Aktualizacje</h3>
@@ -45,23 +52,24 @@
 
   <h2 id="regulamin">Regulamin</h2>
   <h3>1. Czym jest Partyjka</h3>
-  <p>Partyjka to darmowa aplikacja z grami towarzyskimi na jeden telefon, przeciw komputerowi i przez Bluetooth z telefonami obok. Nie wymaga konta i nie ma płatności w aplikacji.</p>
+  <p>Partyjka to darmowa aplikacja z grami towarzyskimi: na jeden telefon, przeciw komputerowi i z telefonami obok przez Bluetooth albo Wi-Fi. Nie wymaga konta i nie ma płatności w aplikacji.</p>
 
   <h3>2. Zasady korzystania</h3>
   <ul>
     <li>Korzystasz z aplikacji do prywatnej rozrywki.</li>
-    <li>Nie wpisuj jako imienia treści obraźliwych ani cudzych danych: inni gracze obok je zobaczą.</li>
+    <li>Nie wpisuj jako imienia, na czacie ani w odpowiedziach treści obraźliwych ani cudzych danych: inni gracze w pokoju je zobaczą.</li>
+    <li>Jeśli ktoś w pokoju zachowuje się nie w porządku, możesz w każdej chwili z niego wyjść, a host może pokój zamknąć.</li>
     <li>Nie próbuj zakłócać gier innych osób ani modyfikować aplikacji, żeby to robić.</li>
   </ul>
 
   <h3>3. Gry dla dorosłych</h3>
-  <p>Niektóre gry (np. Poker) są tylko dla osób pełnoletnich i pokazujemy je dopiero po potwierdzeniu wieku przez konto Apple albo Google. Poker toczy się na wirtualne żetony bez wartości: nie można ich kupić, wygrać ani wymienić na pieniądze ani nagrody.</p>
+  <p>Niektóre gry (np. Poker) są tylko dla osób pełnoletnich i pokazujemy je tylko wtedy, gdy z daty urodzenia podanej przy pierwszym otwarciu wynika, że masz ukończone 18 lat. Poker toczy się na wirtualne żetony bez wartości: nie można ich kupić, wygrać ani wymienić na pieniądze ani nagrody.</p>
 
   <h3>4. Odpowiedzialność</h3>
-  <p>Aplikację udostępniamy bezpłatnie, w obecnej postaci. Staramy się, żeby działała dobrze, ale nie gwarantujemy, że będzie zawsze dostępna i bez błędów, ani że gra przez Bluetooth zadziała na każdym telefonie. Nie ograniczamy odpowiedzialności tam, gdzie prawo na to nie pozwala, i nie naruszamy praw, które przysługują ci jako konsumentowi.</p>
+  <p>Aplikację udostępniamy bezpłatnie, w obecnej postaci. Staramy się, żeby działała dobrze, ale nie gwarantujemy, że będzie zawsze dostępna i bez błędów, ani że gra przez Bluetooth albo Wi-Fi zadziała na każdym telefonie. Nie ograniczamy odpowiedzialności tam, gdzie prawo na to nie pozwala, i nie naruszamy praw, które przysługują ci jako konsumentowi.</p>
 
   <h3>5. Prawa do aplikacji</h3>
-  <p>Aplikacja, jej wygląd, teksty i grafiki należą do wydawcy. Zasady klasycznych gier nie są niczyją własnością; nazwy gier w Partyjce są nasze.</p>
+  <p>Aplikacja, jej wygląd, teksty i grafiki należą do wydawcy. Zasady klasycznych gier nie są niczyją własnością; nazwy gier w Partyjce są nasze. Słowa w Literkach pochodzą ze słownika SJP.PL do gier słownych (CC BY 4.0) i z list SCOWL (© Kevin Atkinson), a fakty w Quizie z Wikidata (CC0).</p>
 
   <h3>6. Sklepy z aplikacjami</h3>
   <p>Pobranie aplikacji z App Store albo Google Play podlega też warunkom tego sklepu. Dla App Store obowiązuje standardowa umowa licencyjna Apple (EULA).</p>
@@ -73,7 +81,67 @@
   <!-- Te same wartości co PUBLISHER i CONTACT_EMAIL w src/app/privacy.tsx -->
   <p>Wydawca: Bartosz Matlak</p>
   <p>Pytania, błędy i pomysły: <a href="mailto:partyjka.support@gmail.com">partyjka.support@gmail.com</a></p>
-  <p class="muted">Obowiązuje od 13 listopada 2026.</p>
+  <p class="muted">Obowiązuje od 27 listopada 2026.</p>
+
+  <section id="en" class="lang" lang="en">
+    <h1>Partyjka</h1>
+    <p class="muted">Party games for your phone.</p>
+    <nav><a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of use</a> · <a href="#contact">Contact</a> · <a href="#prywatnosc" lang="pl">Wersja polska</a></nav>
+
+    <h2 id="privacy">Privacy policy</h2>
+    <p>Partyjka has no accounts, ads or analytics. We don’t collect your data: everything you type stays on this phone or goes only to the phones you play with.</p>
+
+    <h3>What stays on the phone</h3>
+    <p>Your name and avatar color, language, date of birth, badges, last game, saved games and game settings, as well as the names and colors of the people you play with over Bluetooth. They are only in the app’s storage and never reach us. You change the name, color and language in the Profile, and deleting the app deletes all of this data.</p>
+    <p>When you play Mafia with other phones, the phone also remembers, for at most an hour, the room code, over Wi-Fi also the address of the host’s phone, and a random number by which the host’s phone recognizes you when you come back.</p>
+
+    <h3>Age</h3>
+    <p>On first launch the app asks for your date of birth. It shows games for adults only if the date says you are 18 or older. The date stays on this phone and never reaches us. It can’t be changed in the app. If you typed a wrong date: on Android clear Partyjka’s data in the phone’s settings, on an iPhone delete the app and install it again. It will then ask for the date once more.</p>
+
+    <h3>Playing over Bluetooth and Wi-Fi</h3>
+    <p>In “Nearby” mode the phone connects directly to phones nearby, without the internet. It sends them your name, avatar color and moves in the game, and they remember your name and color so they can invite you to another game. When you open a room, every phone with Partyjka nearby sees your name, avatar color, the game and the free seats before anyone joins. An invitation carries only a hash of the names, not the names themselves.</p>
+    <p>In some games the phone also sends what you type: clues and chat messages in Impostor and answers in Countries &amp; Cities. Only the phones in the same room see them, and only during the round. They are not stored anywhere and never reach us.</p>
+    <p>Over Wi-Fi the phones connect directly on the local network, without the internet and without our server: nothing from the game reaches us. A Wi-Fi room is not announced; you join it with its code. The first time, an iPhone asks for access to the local network; you can withdraw it in Settings, under Partyjka.</p>
+    <p>You can withdraw the Bluetooth permission in the phone’s Settings; games against the computer and on one phone work without it. On Android older than 12 the system calls it a location permission, but Partyjka doesn’t use location.</p>
+
+    <h3>Updates</h3>
+    <p>On launch the app asks Expo’s servers (650 Industries, Inc.) whether there is a new version, and downloads it. The request carries the phone’s system, the app version and a random installation tag, with no name and no device identifiers. Like any internet connection, it also shows the IP address. Expo processes this data on our behalf, only to deliver the update.</p>
+
+    <h3>Your rights</h3>
+    <p>We don’t store your data, so there is nothing on our side to share or delete. You can write to us with any privacy question and file a complaint with the President of the Personal Data Protection Office (UODO).</p>
+
+    <h2 id="terms">Terms of use</h2>
+    <h3>1. What Partyjka is</h3>
+    <p>Partyjka is a free app with social games: on one phone, against the computer and with phones nearby over Bluetooth or Wi-Fi. It needs no account and has no in-app purchases.</p>
+
+    <h3>2. How to use it</h3>
+    <ul>
+      <li>You use the app for private entertainment.</li>
+      <li>Don’t type offensive content or other people’s data as your name, in the chat or in answers: the other players in the room will see it.</li>
+      <li>If someone in the room behaves badly, you can leave the room at any time, and the host can close it.</li>
+      <li>Don’t try to disrupt other people’s games or modify the app to do so.</li>
+    </ul>
+
+    <h3>3. Games for adults</h3>
+    <p>Some games (e.g. Poker) are for adults only, and we show them only if the date of birth given on first launch says you are 18 or older. Poker is played for virtual chips with no value: they can’t be bought, won or exchanged for money or prizes.</p>
+
+    <h3>4. Liability</h3>
+    <p>We provide the app free of charge, as it is. We try to make it work well, but we don’t guarantee that it will always be available and free of bugs, or that playing over Bluetooth or Wi-Fi will work on every phone. We don’t limit liability where the law doesn’t allow it, and we don’t affect your rights as a consumer.</p>
+
+    <h3>5. Rights to the app</h3>
+    <p>The app, its look, texts and graphics belong to the publisher. The rules of classic games belong to no one; the names of the games in Partyjka are ours. The words in Letters come from the SJP.PL word list for word games (CC BY 4.0) and from SCOWL word lists (© Kevin Atkinson), and the facts in Quiz from Wikidata (CC0).</p>
+
+    <h3>6. App stores</h3>
+    <p>Downloading the app from the App Store or Google Play is also subject to that store’s terms. For the App Store, Apple’s standard licensed application end user license agreement (EULA) applies.</p>
+
+    <h3>7. Changes and law</h3>
+    <p>When we change the terms or the privacy policy, we’ll change this page and the date below. The terms are governed by Polish law.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Publisher: Bartosz Matlak</p>
+    <p>Questions, bugs and ideas: <a href="mailto:partyjka.support@gmail.com">partyjka.support@gmail.com</a></p>
+    <p class="muted">In effect from November 27, 2026.</p>
+  </section>
 </main>
 </body>
 </html>
